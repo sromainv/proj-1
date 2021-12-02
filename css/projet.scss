@@ -7,9 +7,31 @@ body {
     font-family: 'Outfit', sans-serif;
 }
 
-$month: #F7F7F7;
-$day: #E6E6E6;
-$size: 50px;
+$primary: #F7F7F7;
+$secondary: #E6E6E6;
+$btn: #F0F0F0;
+$size: 80px;
+
+// Légende
+$self: black;
+$conge: black;
+$html: black;
+$css: black;
+$js: black;
+$php: black;
+$phpoo: black;
+$drupal: black;
+$symfony: black;
+$twig: black;
+$mariadb: black;
+$tsangular: black;
+$uml: black;
+$git: black;
+$uiux: black;
+$rgpd: black;
+$security: black;
+$labo: black;
+$tfe: black;
 
 h1, h2, h3 {
     margin: 10px;
@@ -27,36 +49,83 @@ h3 {
 .month-picker {
     display: flex;
     flex-direction: row;
-    .month-pick {
+    .month-pick, .month-pick-all {
         cursor: pointer;
-        margin: 10px;
-        padding: 10px;
-        background-color: #F0F0F0;
+        margin: 0 5px 20px 5px;
+        padding: 8px 14px;
+        background-color: $btn;
         border-radius: 5px;
+    }
+    .month-pick-all {
+        margin-left: 25px;
     }
 }
 
 .month {
-    background-color: $month;
+    background-color: $primary;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    h2 {
+        margin-top: 20px;
+    }
 }
 .week-indicator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
     div {
+        flex: 1;
         margin: 5px;
-        height: $size;
+        text-align: center;
         width: $size;
     }
 }
 .week {
-    height: auto;
-    border: 1px solid green;
+    display: flex;
+    flex-direction: row;
     div {
-        background-color: $day;
+        background-color: $secondary;
         margin: 5px;
         flex: 1;
         height: $size;
         width: $size;
         border-radius: 5px;
+        p {
+            margin: 5px 10px;
+        }
+    }
+    .fade, div:nth-child(6), div:nth-child(7) {
+        opacity: 0.25;
+    }
+}
+
+.legend {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    .legend-btn {
+        align-self: flex-end;
+        cursor: pointer;
+        background-color: $btn;
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 5px;
+        width: fit-content;
+    }
+    .legend-content {
+        background-color: $primary;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        p {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
     }
 }

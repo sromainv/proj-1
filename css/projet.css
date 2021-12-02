@@ -35,12 +35,16 @@ h3 {
           flex-direction: row;
 }
 
-.month-picker .month-pick {
+.month-picker .month-pick, .month-picker .month-pick-all {
   cursor: pointer;
-  margin: 10px;
-  padding: 10px;
+  margin: 0 5px 20px 5px;
+  padding: 8px 14px;
   background-color: #F0F0F0;
   border-radius: 5px;
+}
+
+.month-picker .month-pick-all {
+  margin-left: 25px;
 }
 
 .month {
@@ -51,17 +55,48 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.month h2 {
+  margin-top: 20px;
+}
+
+.week-indicator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
 
 .week-indicator div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin: 5px;
-  height: 50px;
-  width: 50px;
+  text-align: center;
+  width: 80px;
 }
 
 .week {
-  height: auto;
-  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .week div {
@@ -70,8 +105,59 @@ h3 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
+  border-radius: 5px;
+}
+
+.week div p {
+  margin: 5px 10px;
+}
+
+.week .fade, .week div:nth-child(6), .week div:nth-child(7) {
+  opacity: 0.25;
+}
+
+.legend {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+}
+
+.legend .legend-btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  cursor: pointer;
+  background-color: #F0F0F0;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.legend .legend-content {
+  background-color: #F7F7F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.legend .legend-content p {
+  padding: 10px;
+  margin: 5px;
   border-radius: 5px;
 }
 /*# sourceMappingURL=projet.css.map */
