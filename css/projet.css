@@ -99,7 +99,11 @@ h3 {
           flex-direction: row;
 }
 
-.week div {
+.week .fade, .week div:nth-child(6), .week div:nth-child(7) {
+  opacity: 0.25;
+}
+
+.day {
   background-color: #E6E6E6;
   margin: 5px;
   -webkit-box-flex: 1;
@@ -110,12 +114,8 @@ h3 {
   border-radius: 5px;
 }
 
-.week div p {
+.day p {
   margin: 5px 10px;
-}
-
-.week .fade, .week div:nth-child(6), .week div:nth-child(7) {
-  opacity: 0.25;
 }
 
 .legend {
@@ -159,5 +159,81 @@ h3 {
   padding: 10px;
   margin: 5px;
   border-radius: 5px;
+}
+
+.self {
+  background-color: grey;
+}
+
+.conge {
+  background-color: grey;
+}
+
+.html {
+  background-color: grey;
+}
+
+.css {
+  background-color: grey;
+}
+
+.js {
+  background-color: grey;
+}
+
+.php {
+  background-color: grey;
+}
+
+.phpoo {
+  background-color: grey;
+}
+
+.drupal {
+  background-color: grey;
+}
+
+.symfony {
+  background-color: grey;
+}
+
+.twig {
+  background-color: grey;
+}
+
+.mariadb {
+  background-color: grey;
+}
+
+.tsangular {
+  background-color: grey;
+}
+
+.uml {
+  background-color: grey;
+}
+
+.git {
+  background-color: grey;
+}
+
+.uiux {
+  background-color: grey;
+}
+
+.rgpd {
+  background-color: grey;
+}
+
+.security {
+  background-color: grey;
+}
+
+.labo {
+  background-color: grey;
+}
+
+.tfe {
+  background-color: grey;
 }
 /*# sourceMappingURL=projet.css.map */

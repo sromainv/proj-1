@@ -11,27 +11,30 @@ $primary: #F7F7F7;
 $secondary: #E6E6E6;
 $btn: #F0F0F0;
 $size: 80px;
+$fade: 0.25;
 
 // Légende
-$self: black;
-$conge: black;
-$html: black;
-$css: black;
-$js: black;
-$php: black;
-$phpoo: black;
-$drupal: black;
-$symfony: black;
-$twig: black;
-$mariadb: black;
-$tsangular: black;
-$uml: black;
-$git: black;
-$uiux: black;
-$rgpd: black;
-$security: black;
-$labo: black;
-$tfe: black;
+$self: grey;
+$conge: grey;
+$html: grey;
+$css: grey;
+$js: grey;
+$php: grey;
+$phpoo: grey;
+$drupal: grey;
+$symfony: grey;
+$twig: grey;
+$mariadb: grey;
+$tsangular: grey;
+$uml: grey;
+$git: grey;
+$uiux: grey;
+$rgpd: grey;
+$security: grey;
+$labo: grey;
+$tfe: grey;
+
+
 
 h1, h2, h3 {
     margin: 10px;
@@ -85,19 +88,19 @@ h3 {
 .week {
     display: flex;
     flex-direction: row;
-    div {
-        background-color: $secondary;
-        margin: 5px;
-        flex: 1;
-        height: $size;
-        width: $size;
-        border-radius: 5px;
-        p {
-            margin: 5px 10px;
-        }
-    }
     .fade, div:nth-child(6), div:nth-child(7) {
-        opacity: 0.25;
+        opacity: $fade;
+    }
+}
+.day {
+    background-color: $secondary;
+    margin: 5px;
+    flex: 1;
+    height: $size;
+    width: $size;
+    border-radius: 5px;
+    p {
+        margin: 5px 10px;
     }
 }
 
@@ -129,3 +132,23 @@ h3 {
         }
     }
 }
+
+.self { background-color: $self; }
+.conge { background-color: $conge; }
+.html { background-color: $html; }
+.css { background-color: $css; }
+.js { background-color: $js; }
+.php { background-color: $php; }
+.phpoo { background-color: $phpoo; }
+.drupal { background-color: $drupal; }
+.symfony { background-color: $symfony; }
+.twig { background-color: $twig; }
+.mariadb { background-color: $mariadb; }
+.tsangular { background-color: $tsangular; }
+.uml { background-color: $uml; }
+.git { background-color: $git; }
+.uiux { background-color: $uiux; }
+.rgpd { background-color: $rgpd; }
+.security { background-color: $security; }
+.labo { background-color: $labo; }
+.tfe { background-color: $tfe; }
