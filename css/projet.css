@@ -10,11 +10,12 @@ body {
 }
 
 h1, h2, h3 {
-  margin: 10px;
+  margin: 15px;
 }
 
 h1 {
   font-size: 32px;
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -33,6 +34,8 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .month-picker .month-pick, .month-picker .month-pick-all {
@@ -103,6 +106,10 @@ h3 {
   opacity: 0.25;
 }
 
+.week .fade p, .week div:nth-child(6) p, .week div:nth-child(7) p {
+  color: black;
+}
+
 .day {
   background-color: #E6E6E6;
   margin: 5px;
@@ -115,6 +122,7 @@ h3 {
 }
 
 .day p {
+  color: white;
   margin: 5px 10px;
 }
 
@@ -152,88 +160,94 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 5px;
   border-radius: 5px;
 }
 
 .legend .legend-content p {
+  color: white;
   padding: 10px;
   margin: 5px;
   border-radius: 5px;
 }
 
 .self {
-  background-color: grey;
+  background-color: #d4cd61;
 }
 
 .conge {
-  background-color: grey;
+  background-color: #dfb174;
 }
 
 .html {
-  background-color: grey;
+  background-color: #4d8d65;
 }
 
 .css {
-  background-color: grey;
+  background-color: #4dbfc7;
 }
 
 .js {
-  background-color: grey;
+  background-color: #b84e4e;
 }
 
 .php {
-  background-color: grey;
+  background-color: #539cd8;
 }
 
 .phpoo {
-  background-color: grey;
+  background-color: #3d87a5;
 }
 
 .drupal {
-  background-color: grey;
+  background-color: #36527c;
 }
 
 .symfony {
-  background-color: grey;
+  background-color: #7167ce;
 }
 
 .twig {
-  background-color: grey;
+  background-color: #755996;
 }
 
 .mariadb {
-  background-color: grey;
+  background-color: #5859a7;
 }
 
 .tsangular {
-  background-color: grey;
+  background-color: #702727;
 }
 
 .uml {
-  background-color: grey;
+  background-color: #9ab87f;
 }
 
 .git {
-  background-color: grey;
+  background-color: #93aab9;
 }
 
 .uiux {
-  background-color: grey;
+  background-color: #75888b;
+}
+
+.scrum {
+  background-color: #83c033;
 }
 
 .rgpd {
-  background-color: grey;
+  background-color: #9b6a53;
 }
 
 .security {
-  background-color: grey;
+  background-color: #433b5f;
 }
 
 .labo {
-  background-color: grey;
+  background-color: #48ad8f;
 }
 
 .tfe {
-  background-color: grey;
+  background-color: #e0861e;
 }
 /*# sourceMappingURL=projet.css.map */

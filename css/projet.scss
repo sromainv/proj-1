@@ -14,44 +14,40 @@ $size: 80px;
 $fade: 0.25;
 
 // Légende
-$self: grey;
-$conge: grey;
-$html: grey;
-$css: grey;
-$js: grey;
-$php: grey;
-$phpoo: grey;
-$drupal: grey;
-$symfony: grey;
-$twig: grey;
-$mariadb: grey;
-$tsangular: grey;
-$uml: grey;
-$git: grey;
-$uiux: grey;
-$rgpd: grey;
-$security: grey;
-$labo: grey;
-$tfe: grey;
+$self: rgb(212, 205, 97);
+$conge: rgb(223, 177, 116);
+$html: rgb(77, 141, 101);
+$css: rgb(77, 191, 199);
+$js: rgb(184, 78, 78);
+$php: rgb(83, 156, 216);
+$phpoo: rgb(61, 135, 165);
+$drupal: rgb(54, 82, 124);
+$symfony: rgb(113, 103, 206);
+$twig: rgb(117, 89, 150);
+$mariadb: rgb(88, 89, 167);
+$tsangular: rgb(112, 39, 39);
+$uml: rgb(154, 184, 127);
+$git: rgb(147, 170, 185);
+$uiux: rgb(117, 136, 139);
+$scrum: rgb(131, 192, 51);
+$rgpd: rgb(155, 106, 83);
+$security: rgb(67, 59, 95);
+$labo: rgb(72, 173, 143);
+$tfe: rgb(224, 134, 30);
 
 
-
-h1, h2, h3 {
-    margin: 10px;
-}
+h1, h2, h3 {margin: 15px;}
 h1 {
     font-size: 32px;
+    margin-bottom: 40px;
 }
-h2 {
-    font-size: 28px;
-}
-h3 {
-    font-size: 22px;
-}
+h2 {font-size: 28px;}
+h3 {font-size: 22px;}
 
 .month-picker {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     .month-pick, .month-pick-all {
         cursor: pointer;
         margin: 0 5px 20px 5px;
@@ -90,6 +86,9 @@ h3 {
     flex-direction: row;
     .fade, div:nth-child(6), div:nth-child(7) {
         opacity: $fade;
+        p {
+            color: black;
+        }
     }
 }
 .day {
@@ -100,6 +99,7 @@ h3 {
     width: $size;
     border-radius: 5px;
     p {
+        color: white;
         margin: 5px 10px;
     }
 }
@@ -124,8 +124,10 @@ h3 {
         background-color: $primary;
         display: flex;
         flex-wrap: wrap;
+        padding: 5px;
         border-radius: 5px;
         p {
+            color: white;
             padding: 10px;
             margin: 5px;
             border-radius: 5px;
@@ -133,22 +135,26 @@ h3 {
     }
 }
 
-.self { background-color: $self; }
-.conge { background-color: $conge; }
-.html { background-color: $html; }
-.css { background-color: $css; }
-.js { background-color: $js; }
-.php { background-color: $php; }
-.phpoo { background-color: $phpoo; }
-.drupal { background-color: $drupal; }
-.symfony { background-color: $symfony; }
-.twig { background-color: $twig; }
-.mariadb { background-color: $mariadb; }
-.tsangular { background-color: $tsangular; }
-.uml { background-color: $uml; }
-.git { background-color: $git; }
-.uiux { background-color: $uiux; }
-.rgpd { background-color: $rgpd; }
-.security { background-color: $security; }
-.labo { background-color: $labo; }
-.tfe { background-color: $tfe; }
+
+
+// Legend background color, positionned last to correctly override the class ".day"
+.self {background-color: $self;}
+.conge {background-color: $conge;}
+.html {background-color: $html;}
+.css {background-color: $css;}
+.js {background-color: $js;}
+.php {background-color: $php;}
+.phpoo {background-color: $phpoo;}
+.drupal {background-color: $drupal;}
+.symfony {background-color: $symfony;}
+.twig {background-color: $twig;}
+.mariadb { background-color: $mariadb;}
+.tsangular {background-color: $tsangular;}
+.uml {background-color: $uml;}
+.git {background-color: $git;}
+.uiux {background-color: $uiux;}
+.scrum {background-color: $scrum;}
+.rgpd {background-color: $rgpd;}
+.security {background-color: $security;}
+.labo {background-color: $labo;}
+.tfe {background-color: $tfe;}

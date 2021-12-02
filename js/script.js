@@ -2,7 +2,7 @@ $(".month-pick").click(function(e){
     e.preventDefault();
     var nb = $(this).attr('id');
     $('.month').hide();
-    $('#month-'+nb).slideToggle(500);
+    $('#month-'+nb).slideToggle(450);
 });
 $(".month-pick-all").click(function(e){
     e.preventDefault();
