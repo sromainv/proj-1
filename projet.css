@@ -4,4 +4,74 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 10px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.month-picker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.month-picker .month-pick {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  background-color: #F0F0F0;
+  border-radius: 5px;
+}
+
+.month {
+  background-color: #F7F7F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.week-indicator div {
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+}
+
+.week {
+  height: auto;
+  border: 1px solid green;
+}
+
+.week div {
+  background-color: #E6E6E6;
+  margin: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
 /*# sourceMappingURL=projet.css.map */
