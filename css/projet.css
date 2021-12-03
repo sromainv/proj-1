@@ -127,6 +127,7 @@ h3 {
 }
 
 .legend {
+  z-index: 10;
   position: fixed;
   top: 0;
   right: 0;
@@ -176,7 +177,7 @@ h3 {
 }
 
 .conge {
-  background-color: #dfb174;
+  background-color: #e0bb8a;
 }
 
 .html {
@@ -212,7 +213,7 @@ h3 {
 }
 
 .mariadb {
-  background-color: #5859a7;
+  background-color: #2e5dc2;
 }
 
 .tsangular {

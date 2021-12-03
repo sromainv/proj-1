@@ -15,7 +15,7 @@ $fade: 0.25;
 
 // Légende
 $self: rgb(212, 205, 97);
-$conge: rgb(223, 177, 116);
+$conge: rgb(224, 187, 138);
 $html: rgb(77, 141, 101);
 $css: rgb(77, 191, 199);
 $js: rgb(184, 78, 78);
@@ -24,7 +24,7 @@ $phpoo: rgb(61, 135, 165);
 $drupal: rgb(54, 82, 124);
 $symfony: rgb(113, 103, 206);
 $twig: rgb(117, 89, 150);
-$mariadb: rgb(88, 89, 167);
+$mariadb: rgb(46, 93, 194);
 $tsangular: rgb(112, 39, 39);
 $uml: rgb(154, 184, 127);
 $git: rgb(147, 170, 185);
@@ -105,6 +105,7 @@ h3 {font-size: 22px;}
 }
 
 .legend {
+    z-index: 10;
     position: fixed;
     top: 0;
     right: 0;
