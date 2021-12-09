@@ -26,6 +26,11 @@ h3 {
   font-size: 22px;
 }
 
+.current-day {
+  font-size: 20px;
+  margin: 15px auto 30px 15px;
+}
+
 .month-picker {
   display: -webkit-box;
   display: -ms-flexbox;
