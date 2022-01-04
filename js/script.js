@@ -78,3 +78,13 @@ $(document).ready(function(){
     displayDay();
     toggleMonth();
 });
+
+
+
+// built-in alternative for Date() manipulation
+/*
+const OPTIONS = {weekday: "long", day: "2-digit", month: "long"};
+let today = new Date();
+let localTime = today.toLocaleTimeString("fr-BE"); // hh:mm:ss
+let localDate = today.toLocaleDateString("fr-BE", OPTIONS); // lundi 1 janvier
+*/
